@@ -8,7 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      colors: {
+        primary: {
+          DEFAULT: "hsl(var(--primary))"
+        },
+        background: {
+          DEFAULT: "hsl(var(--background))",
+          foreground: "hsl(var(--background-foreground))"
+        },
+        text: "hsl(var(--text))"
+      },
+      borderRadius: {
+        "4xl": "2rem",
+      },
+      transitionDuration:{
+        DEFAULT:"150ms"
+      }
     },
   },
   plugins: [],
