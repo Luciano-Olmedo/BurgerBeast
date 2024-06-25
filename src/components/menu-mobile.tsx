@@ -9,7 +9,7 @@ export const MenuMobile = () => {
                     {
                         menu.map(menu => (
                             <li key={menu.href}>
-                                <Link href={menu.href} className={cn("flex items-center gap-x-2 py-3 px-6 rounded-full text-2xl")}>
+                                <Link href={menu.href} className={cn("flex items-center gap-x-2 py-3 px-6 rounded-full text-2xl",menu.href === "/menu" && "bg-primary font-medium")}>
                                     <i className={menu.icon}></i>
                                     {menu.label}
                                 </Link>
