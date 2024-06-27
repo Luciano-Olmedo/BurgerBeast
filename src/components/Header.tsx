@@ -1,12 +1,15 @@
+"use client";
 import Link from "next/link"
 import { Logo } from "./Logo"
 import { menu } from "@/assets/data"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import { MenuMobile } from "./menu-mobile"
+import { useState } from "react";
 
 
 export const Header = () => {
+  const [showMenuMobile, setShowMenuMobile] = useState<boolean>(false);
   return (
     <>
       <header className='flex justify-between items-center'>
@@ -36,21 +39,22 @@ export const Header = () => {
               <h5 className="font-medium">Luciana</h5>
             </li>
             <li>
-              <button type="button" className="bg-background text-xl w-10 h-10 flex items-center justify-center rounded-full" >
+              <button
+               type="button" className="bg-background text-xl w-10 h-10 flex items-center justify-center rounded-full" >
                 <i className="fi fi-rr-settings"></i>
               </button>
             </li>
             <li>
-              <button type="button" className="lg:hidden bg-background text-xl w-10 h-10 flex items-center justify-center rounded-full" >
+              <button type="button" onClick={( )=> setShowMenuMobile(true)} className="lg:hidden bg-background text-xl w-10 h-10 flex items-center justify-center rounded-full" >
                 <i className="fi fi-rr-bars-staggered"></i>
               </button>
             </li>
           </ul>
         </section>
       </header>
-      <MenuMobile/>
+      <MenuMobile isOpen={showMenuMobile} onClose={setShowMenuMobile}/>
 
-      
+
 
     </>
   )
