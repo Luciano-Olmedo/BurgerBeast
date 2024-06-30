@@ -1,7 +1,10 @@
-
+import { Categories } from "@/components/Categories";
 
 export default function Home() {
   return (
-    <h1 className="">Content</h1>
+    <div className="">
+      <Categories/>
+
+    </div>
   );
 }

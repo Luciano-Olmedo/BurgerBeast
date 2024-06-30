@@ -1,4 +1,8 @@
-export const menu = [
+import { Menu,Category } from "@/types"
+
+
+
+export const menu: Menu[] = [
     {
         label:"Inicio",
         icon:"fi fi-rr-home",
@@ -24,4 +28,23 @@ export const menu = [
         icon:"fi fi-rr-file-invoice-dollar",
         href:"/bills"
     }
+]
+
+export const categories: Category[] = [
+    {
+        category:"Hamburguesas"
+    },
+    {
+        category:"Pizzas"
+    },
+    {
+        category:"Pastas"
+    },
+    {
+        category:"Ensaladas"
+    },
+    {
+        category:"Bebidas"
+    },
+
 ]
