@@ -18,12 +18,8 @@ export const Categories = () => {
                         </button>
 
                     </li>
-                ))
-                    
-                
+                ))               
                }
-
-
             </ul >
 
         </>
