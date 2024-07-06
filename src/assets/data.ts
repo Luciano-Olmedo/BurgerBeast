@@ -46,6 +46,9 @@ export const categories: Category[] = [
     {
         category: "Bebidas"
     },
+    {
+        category: "Fiambres"
+    },
 
 ]
 
@@ -57,7 +60,7 @@ export const products: Product[] = [
         discount: 15,
         stock: 100,
         price: 1500,
-        description: "The best Burger in the world"
+        description: "La mejor hamburguesa del mundo"
     },
     {
         name: "Pizza Napolitana",
@@ -66,7 +69,7 @@ export const products: Product[] = [
         discount: 10,
         stock: 100,
         price: 2500,
-        description: "The best Pizza in the world"
+        description: "La mejor Pizza del mundo"
     },
     {
         name: "Tallarines",
@@ -75,17 +78,38 @@ export const products: Product[] = [
         discount: 5,
         stock: 100,
         price: 3000,
-        description: "The best pasta in the world"
+        description: "La mejor pasta del mundo"
     },
     {
         name: "Ensalada de lechuga y tomate",
-        category: "Pastas",
+        category: "Ensalada",
         image: "https://img.freepik.com/fotos-premium/ensalada-tomate-lechuga-queso-mostaza-aderezo-ajo_2829-12741.jpg?w=360",
         discount: 20,
         stock: 100,
         price: 1500,
-        description: "The best salad in the world"
+        description: "La mejor ensalada del mundo"
+        
+        
     },
+    {
+        name: "Coca Cola",
+        category: "Bebidas",
+        image: "https://img.freepik.com/fotos-premium/vaso-refresco-cola-hielo-cayendo-aislado-sobre-fondo-blanco_252965-940.jpg?w=360",
+        discount: 5,
+        stock: 100,
+        price: 2000,
+        description: "La mejor gaseosa del mundo"
+    },
+    {
+        name: "Picada",
+        category: "Fiambres",
+        image: "https://img.freepik.com/fotos-premium/bandeja-catering-antipasto-salami-queso_2829-13114.jpg?w=740",
+        discount: 10,
+        stock: 0,
+        price: 3500,
+        description: "La mejor gaseosa del mundo"
+    },
+
 
     
 ];
